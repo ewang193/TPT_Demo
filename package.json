@@ -1,0 +1,25 @@
+{
+  "name": "tpt_demo",
+  "version": "1.0.0",
+  "description": "nodejs project show",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ewang193/TPT_Demo.git"
+  },
+  "keywords": [
+    "Nodejs"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ewang193/TPT_Demo/issues"
+  },
+  "homepage": "https://github.com/ewang193/TPT_Demo#readme",
+  "devDependencies": {
+    "express": "^4.13.3"
+  }
+}

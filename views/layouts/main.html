@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>  <!-- 文档字符编码声明 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>  <!-- 移动设备优先-->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">   <!-- 兼容低版本的ie浏览器 -->
+    <title>Example App</title>    <!-- {{companyInformation.toolName}} 这里需要再考察，这个值是怎么配置的 -->
+    <link href="/TPT_Demo/components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="TPT_Demo/css/cerberus_default_theme.css" rel="stylesheet" type="text/css">
+
+    <script src="/TPT_Demo/components/jquery/jquery.min.js"></script>
+    <script src="/TPT_Demo/components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script>
+        window.__CERBERUS__ = {
+
+        }
+    </script>
+
+    <!--<script type="text/javascript" src="/TPT_Demo/js/init.js"></script>-->
+</head>
+<body>
+
+    <!-- Fixed navbar start -->
+    <!-- pos-f-t是bootstrap中的一个样式 -->
+    <div class="pos-f-t">
+        <div class="container">
+            <div class="row brand_top">
+                <div class="col-xs-6 text-xs-left">
+                    <a href="/TPT/" class="nav-brand" id="logo-container">
+                        <img src="/TPT/public/img/PwC_logo.png" style="height:50px;" alt="">
+                        <span class="split-line"></span>
+                        <span class="app-title">PWC Demo</span>
+                    </a>
+                </div>
+                <div class="col-xs-6 text-xs-right">
+                    <div class="user_block">
+                        <div class="lan-sel-container">
+                            <select id="lan-select">
+                                <option value="zh">中文</option>
+                                <option value="en">English</option>
+                                <option value="es">Español</option>
+                            </select>
+                        </div>
+
+                        <div class="notificationBlock">
+
+                        </div>
+
+                        <div class="login_search">
+                            <a class="dropdown-toggle nav-link" type="" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span>Test test</span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right user_dropdown" aria-labelledby="dropdownMenu1">
+                                <a class="dropdown-item logout" href="/TPT/login">
+                                    <img src="/TPT/img/home/Logout.svg" class="svg_image" style="margin-top: 4px;">Logout
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <nav class="navbar navbar-light bg-faded" role="navigation">
+
+        </nav>
+    </div>
+    <!-- Fixed navbar end -->
+
+    <!-- body start -->
+    <div class="container-fluid">
+        {{{body}}}
+    </div>
+    <!-- body end -->
+
+</body>
+</html>
